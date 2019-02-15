@@ -17,7 +17,7 @@ rp_module_section="opt"
 rp_module_flags="!rpi"
 
 function sources_lr-reicast-tinker() {
-    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git
+    gitPullOrClone "$md_build" https://github.com/RetroPie-Expanded/reicast-emulator.git
 }
 
 function build_lr-reicast-tinker() {
