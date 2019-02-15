@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ~
 cd RetroPie-Expanded/
 git pull origin
