@@ -1,6 +1,6 @@
 **Note** this version is tailored for the Tinker Board
 
-# RetroPie-Extra
+# RetroPie-Expanded
 
 This is a **collection of unofficial installation scripts for RetroPie by ZeroJay** allowing you to quickly and easily **install emulators, ports and libretrocores** that haven't been included in RetroPie for one reason or another. These scripts can be considered experimental at best. 
 
