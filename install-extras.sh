@@ -6,7 +6,7 @@ if [ ! -z "$1" ];then
 fi
 if [ ! -d "$RPS_HOME" ];then
     echo "RetroPie-Setup directory $RPS_HOME doesn't exist. Please input the location of RetroPie-Setup."
-    echo "EX: ./install-extras.sh /home/pi/RetroPie-Setup"
+    echo "EX: ./install-extras.sh /home/tinker/RetroPie-Setup"
     exit
 fi
 
