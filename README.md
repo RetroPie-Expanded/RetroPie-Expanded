@@ -1,8 +1,8 @@
-**Note** - This repository is no longer maintained. Please feel free to fork it and take it over for the Retropie community as I am no longer using it and no longer have time to do any work with it. To those of you who have made an effort and contributed, you have my endless thanks and respect.
+**Note** this version is tailored for the Tinker Board
 
 # RetroPie-Extra
 
-This is a **collection of unofficial installation scripts for RetroPie** allowing you to quickly and easily **install emulators, ports and libretrocores** that haven't been included in RetroPie for one reason or another. These scripts can be considered experimental at best. 
+This is a **collection of unofficial installation scripts for RetroPie by ZeroJay** allowing you to quickly and easily **install emulators, ports and libretrocores** that haven't been included in RetroPie for one reason or another. These scripts can be considered experimental at best. 
 
 Those in the `master` branch have been tested reasonably and should work well but may have some flaws as they haven't gone through the RetroPie's watchful eyes yet. Scripts that are unfinished/untested/unpolished will not be located in this repository and instead have been moved to [RetroPie-Extra-unstable](https://github.com/zerojay/RetroPie-Extra-unstable).
 
@@ -14,11 +14,11 @@ The following commands clone the repo to your Raspberry Pi and then run `install
 
 ```bash
 cd ~
-git clone https://github.com/zerojay/RetroPie-Extra.git
-cd RetroPie-Extra/
+git clone https://github.com/RetroPie-Expanded/RetroPie-Expanded.git
+cd RetroPie-Expanded
 ./install-extras.sh
 ```
-The installation script assumes that you are running it on a Raspberry Pi with the `RetroPie-Setup/` folder being stored in `/home/pi/RetroPie-Setup`. If your setup differs, just copy the scripts directly to the folder they need to be in.
+The installation script assumes that you are running it on a Tinker Board with the `RetroPie-Setup/` folder being stored in `/home/tinker/RetroPie-Setup`. If your setup differs, just copy the scripts directly to the folder they need to be in.
 
 ## Usage
 
@@ -35,12 +35,12 @@ The following commands update your Raspberry Pi to the latest repo and then run 
 
 ```bash
 cd ~
-cd RetroPie-Extra/
+cd RetroPie-Expanded/
 git pull origin
 ./install-extras.sh
 ```
 
-The installation script assumes that you are running it on a Raspberry Pi with the `RetroPie-Setup/` folder being stored in `/home/pi/RetroPie-Setup`. If your setup differs, just copy the scripts directly to the folder they need to be in.
+The installation script assumes that you are running it on a Raspberry Pi with the `RetroPie-Setup/` folder being stored in `/home/tinker/RetroPie-Setup`. If your setup differs, just copy the scripts directly to the folder they need to be in.
 
 ## Troubleshooting
 
@@ -65,6 +65,10 @@ In most cases, this is likely because the port requires external data files, esp
 #### Libretrocores
 
 - [X] - `lr-mame2003_midway.sh` - MAME 0.78 core with Midway games optimizations.
+
+#### RetroPiemenu
+
+- [X] - `bezelproject.sh` - The Bezel Projecte - **Tested and works well.**
 
 #### Ports
 
@@ -145,9 +149,4 @@ I've moved this over to the [TODO.md](/TODO.md) file.
 - [X] - sdltrs - Radio Shack TRS-80 Model I/III/4/4P emulator.
 - [X] - ti99sim - Texas Instruments 99A emulator.
 
-## Contact Info / Additional Information
 
-- **Twitter**: [@zerojay](https://twitter.com/zerojay) - Often posting new information and additions from the repository to the #retropie hashtag.  
-- **IRC**: zerojay on irc.freenode.net, #retropie/#retropie-extra.
-
-If you wish to be up-to-date about all the changes happening to the repository as they happen, feel free to join the #retropie-extra channel on **Freenode**.
