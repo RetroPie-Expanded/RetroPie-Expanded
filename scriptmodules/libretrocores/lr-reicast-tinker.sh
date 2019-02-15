@@ -13,7 +13,7 @@ rp_module_id="lr-reicast-tinker"
 rp_module_desc="Dreamcast emu - Reicast port for libretro on the Tinker Board"
 rp_module_help="ROM Extensions: .cdi .gdi\n\nCopy your Dreamcast roms to $romdir/dreamcast\n\nCopy the required BIOS files dc_boot.bin and dc_flash.bin to $biosdir/dc"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/reicast-emulator/master/LICENSE"
-rp_module_section="exp"
+rp_module_section="opt"
 rp_module_flags="!rpi"
 
 function sources_lr-reicast-tinker() {
