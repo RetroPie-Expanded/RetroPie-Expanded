@@ -13,7 +13,7 @@ rp_module_id="lr-daphne-tinker"
 rp_module_desc="Laserdisc emu - Daphne port for libretro"
 rp_module_help="ROM Extension: .daphne\n\nCopy your Daphne roms to $romdir/daphne"
 rp_module_section="exp"
-rp_module_flags="!rpi"
+rp_module_flags=""
 
 function sources_lr-daphne-tinker() {
     gitPullOrClone "$md_build" https://github.com/RetroPie-Expanded/daphne.git
