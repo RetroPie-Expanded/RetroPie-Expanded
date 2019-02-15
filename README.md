@@ -60,10 +60,13 @@ In most cases, this is likely because the port requires external data files, esp
 - [X] - `atari800.sh` - Atari 800/5200 emulator with additional joystick support - **5200 is tested, 800 is not.**
 - [X] - `gearboy.sh` - Gameboy emulator - **Tested and works well.**
 - [X] - `kat5200.sh` - Atari 8-bit/5200 emulator - **Only set up for 5200 at the moment.**
+- [X] - `mupen64.sh` - Mupen64 emulator with patch for the Tinker Board - **Tested and works well.**
 - [X] - `pokemini.sh` - Pokemon Mini emulator - **Tested and works well.**
+- [X] - `ppsspp.sh` - PPSSPP emulator with patch for the Tinker Board - **Tested and works well.**
 
 #### Libretrocores
 
+- [X] - `lr-daphne-tinker.sh` - Libretro Daphne with Tinker Board optimizations.
 - [X] - `lr-mame2003_midway.sh` - MAME 0.78 core with Midway games optimizations.
 - [X] - `lr-reicast-tinker.sh` - Libretro Reicast with Tinker Board optimizations.
 
