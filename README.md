@@ -65,6 +65,7 @@ In most cases, this is likely because the port requires external data files, esp
 #### Libretrocores
 
 - [X] - `lr-mame2003_midway.sh` - MAME 0.78 core with Midway games optimizations.
+- [X] - `lr-reicast-tinker.sh` - Libretro Reicast with Tinker Board optimizations.
 
 #### RetroPiemenu
 
