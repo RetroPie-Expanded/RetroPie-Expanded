@@ -2,7 +2,7 @@
 
 # RetroPie-Expanded
 
-This is a **collection of unofficial installation scripts for RetroPie by ZeroJay** allowing you to quickly and easily **install emulators, ports and libretrocores** that haven't been included in RetroPie for one reason or another. These scripts can be considered experimental at best. 
+This is a **collection of unofficial installation scripts for RetroPie by ZeroJay** allowing you to quickly and easily **install ROTT scripts, emulators, ports, and libretrocores** that haven't been included in RetroPie for one reason or another. These scripts can be considered experimental at best. 
 
 Those in the `master` branch have been tested reasonably and should work well but may have some flaws as they haven't gone through the RetroPie's watchful eyes yet. Scripts that are unfinished/untested/unpolished will not be located in this repository and instead have been moved to [RetroPie-Extra-unstable](https://github.com/zerojay/RetroPie-Extra-unstable).
 
