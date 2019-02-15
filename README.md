@@ -72,7 +72,8 @@ In most cases, this is likely because the port requires external data files, esp
 
 #### RetroPiemenu
 
-- [X] - `bezelproject.sh` - The Bezel Projecte - **Tested and works well.**
+- [X] - `bezelproject.sh` - The Bezel Project - **Tested and works well.**
+- [X] - `update-retropieexpanded.sh.sh` - Update Script for RetroPie-Expanded - **untested**
 
 #### Ports
 
