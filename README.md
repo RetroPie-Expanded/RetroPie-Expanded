@@ -16,6 +16,7 @@ The following commands clone the repo to your Raspberry Pi and then run `install
 cd ~
 git clone https://github.com/RetroPie-Expanded/RetroPie-Expanded.git
 cd RetroPie-Expanded
+sudo chmod a+x install-extras.sh
 ./install-extras.sh
 ```
 The installation script assumes that you are running it on a Tinker Board with the `RetroPie-Setup/` folder being stored in `/home/tinker/RetroPie-Setup`. If your setup differs, just copy the scripts directly to the folder they need to be in.
