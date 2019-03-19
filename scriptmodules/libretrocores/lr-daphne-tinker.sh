@@ -21,7 +21,7 @@ function sources_lr-daphne-tinker() {
 
 function build_lr-daphne-tinker() {
     make clean
-    make platform=pi -j4
+    make platform=tinkerboard ARCH=arm
     md_ret_require="$md_build/daphne_libretro.so"
 }
 
