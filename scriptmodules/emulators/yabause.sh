@@ -21,7 +21,7 @@ function depends_yabause() {
 }
 
 function sources_yabause() {
-    gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git
+    gitPullOrClone "$md_build" https://github.com/RetroPie-Expanded/yabause.git
 }
 
 function build_yabause() {
