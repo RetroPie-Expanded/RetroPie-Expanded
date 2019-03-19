@@ -70,7 +70,7 @@ In most cases, this is likely because the port requires external data files, esp
 
 - [X] - `lr-daphne-tinker.sh` - Libretro Daphne with Tinker Board optimizations. **WIP**
 - [X] - `lr-mame2003_midway.sh` - MAME 0.78 core with Midway games optimizations. **WIP**
-- [X] - `lr-reicast-tinker.sh` - Libretro Reicast with Tinker Board optimizations. **Tested and works well.**
+- [X] - `lr-reicast.sh` - Libretro Reicast with Tinker Board optimizations. **Tested and works well.**
 
 #### RetroPiemenu
 
