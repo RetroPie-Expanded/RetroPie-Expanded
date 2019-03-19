@@ -13,17 +13,17 @@ rp_module_id="lr-kronos"
 rp_module_desc="Saturn & ST-V emulator - Kronos port for libretro"
 rp_module_help="ROM Extensions: .iso .cue .zip .ccd .mds\n\nCopy your Sega Saturn & ST-V roms to $romdir/saturn\n\nCopy the required BIOS file saturn_bios.bin / stvbios.zip to $biosdir/kronos"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/yabause/kronos/yabause/COPYING"
-rp_module_section="exp"
-rp_module_flags="!arm !aarch64"
+rp_module_section="opt"
+rp_module_flags="!aarch64"
 
 function sources_lr-kronos() {
-    gitPullOrClone "$md_build" https://github.com/libretro/yabause.git kronos
+    gitPullOrClone "$md_build" https://github.com/RetroPie-Expanded/yabause.git kronos
 }
 
 function build_lr-kronos() {
     cd yabause/src/libretro
     make clean
-    make
+    make platform=tinkerboard ARCH=arm
     md_ret_require="$md_build/yabause/src/libretro/kronos_libretro.so"
 }
 
