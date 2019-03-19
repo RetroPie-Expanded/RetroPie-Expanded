@@ -16,17 +16,17 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/reicast-emula
 rp_module_section="opt"
 rp_module_flags=""
 
-function sources_lr-reicast-tinker() {
-    gitPullOrClone "$md_build" https://github.com/RetroPie-Expanded/reicast-emulator.git
+function sources_lr-reicast() {
+    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git
 }
 
-function build_lr-reicast-tinker() {
+function build_lr-reicast() {
     make clean
     make platform=tinkerboard ARCH=arm
     md_ret_require="$md_build/reicast_libretro.so"
 }
 
-function install_lr-reicast-tinker() {
+function install_lr-reicast() {
     md_ret_files=(
         'reicast_libretro.so'
     )
@@ -34,7 +34,11 @@ function install_lr-reicast-tinker() {
 
 function configure_lr-reicast-tinker() {
     mkRomDir "dreamcast"
+    mkRomDir "naomi"
+    mkRomDir "atomiswave"
     ensureSystemretroconfig "dreamcast"
+    ensureSystemretroconfig "naomi"
+    ensureSystemretroconfig "atomiswave"
 
     mkUserDir "$biosdir/dc"
 
@@ -43,5 +47,9 @@ function configure_lr-reicast-tinker() {
     iniSet "video_shared_context" "true"
 
     addEmulator 0 "$md_id" "dreamcast" "$md_inst/reicast_libretro.so"
+    addEmulator 0 "$md_id" "naomi" "$md_inst/reicast_libretro.so"
+    addEmulator 0 "$md_id" "atomiswave" "$md_inst/reicast_libretro.so"
     addSystem "dreamcast"
+    addSystem "naomi"
+    addSystem "atomiswave"
 }
