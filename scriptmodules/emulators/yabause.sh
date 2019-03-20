@@ -25,10 +25,10 @@ function sources_yabause() {
 }
 
 function build_yabause() {
-    cd yabause/src/sdl
-	./configure
-	make clean
-    make platform=tinkerboard ARCH=arm
+    cd yabause/mini18n
+    cmake .	
+    make
+    make install
     md_ret_require="$md_build/yabause"
 }
 
