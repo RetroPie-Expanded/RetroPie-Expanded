@@ -12,7 +12,7 @@
 rp_module_id="yabause"
 rp_module_desc="Saturn emulator - Yabuase"
 rp_module_help="ROM Extensions: .bin .iso .zip\n\nCopy your saturn roms to $romdir/saturn"
-rp_module_licence="NONCOM https://raw.githubusercontent.com/RetroPie/snes9x-rpi/master/snes9x.h"
+rp_module_licence="https://raw.githubusercontent.com/Yabause/yabause/master/README.md"
 rp_module_section="exp"
 rp_module_flags=""
 
