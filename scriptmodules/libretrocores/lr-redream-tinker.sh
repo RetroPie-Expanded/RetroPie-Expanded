@@ -14,7 +14,7 @@ rp_module_desc="Dreamcast emulator - redream port for libretro"
 rp_module_help="ROM Extensions: .cdi .gdi\n\nCopy your Dreamcast roms to $romdir/dreamcast\n\nCopy the required BIOS files dc_boot.bin and dc_flash.bin to $biosdir"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/redream/master/LICENSE.txt"
 rp_module_section="exp"
-rp_module_flags="!arm !aarch64"
+rp_module_flags="!aarch64"
 
 function sources_lr-redream() {
     gitPullOrClone "$md_build" https://github.com/RetroPie-Expanded/redream.git
@@ -23,7 +23,7 @@ function sources_lr-redream() {
 function build_lr-redream() {
     cd deps/libretro
     make clean
-    make
+    make platform=tinkerboard ARCH=arm
     md_ret_require="$md_build/deps/libretro/redream_libretro.so"
 }
 
